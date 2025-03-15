@@ -1,0 +1,22 @@
+Test Case,Graph Size,Algorithm,Runtime (seconds)
+Small graph (4 nodes),4,Brute Force,3.6668968200683594
+Small graph (4 nodes),4,Branch and Bound,4.510490417480469
+Small graph (4 nodes),4,Dynamic Programming,2.4753875732421875
+Small graph (4 nodes),4,Approximation Algorithm,2.3490865230560303
+Medium graph (8 nodes),8,Brute Force,2.0919384956359863
+Medium graph (8 nodes),8,Branch and Bound,1.9521141052246094
+Medium graph (8 nodes),8,Dynamic Programming,2.569814920425415
+Medium graph (8 nodes),8,Approximation Algorithm,2.2843122482299805
+Medium graph (10 nodes),10,Brute Force,6.889345407485962
+Medium graph (10 nodes),10,Branch and Bound,6.561558723449707
+Medium graph (10 nodes),10,Dynamic Programming,2.0594072341918945
+Medium graph (10 nodes),10,Approximation Algorithm,1.9251112937927246
+Large graph (12 nodes),12,Branch and Bound,60.02221989631653
+Large graph (12 nodes),12,Dynamic Programming,2.5297491550445557
+Large graph (12 nodes),12,Approximation Algorithm,2.151649236679077
+"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,5.547688722610474
+"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,2.5810747146606445
+"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,2.126868963241577
+Fully connected (12 nodes),12,Branch and Bound,60.03496742248535
+Fully connected (12 nodes),12,Dynamic Programming,2.317377805709839
+Fully connected (12 nodes),12,Approximation Algorithm,2.330810785293579

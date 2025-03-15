@@ -2,6 +2,12 @@ import heapq
 def calculate_total_distance(route, graph):
     return sum(graph[route[i]][route[i+1]]['weight'] for i in range(len(route)-1))
 
+# Branch and bound solution to the TSP:
+#     # we take in the route(list) of the cities in the order they are visited
+#the lower bound fucntion is used to give a lower bound estimate for a given path--> the bound is calcualted by summing the minimum edge weight  for the node 
+# often, the lower bound is used to prune the search space by eliminating paths that are guaranteed to be suboptimal
+
+
 def tsp_branch_and_bound(graph):
     def lower_bound(path):
         return sum(min(graph[node][neighbor]['weight'] for neighbor in graph.neighbors(node)) for node in path)

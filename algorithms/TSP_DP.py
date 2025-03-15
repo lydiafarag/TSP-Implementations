@@ -3,9 +3,13 @@ import numpy as np
 def calculate_total_distance(route, graph):
     return sum(graph[route[i]][route[i+1]]['weight'] for i in range(len(route)-1))
 
+# Dynamic programming solution to the TSP:
+#     # we take in the route(list) of the cities in the order they are visited
+#     # we take in the graph(networkx graph) of the cities and the distances between them
+#     # we use the  Held-Karp algorithm to solve the TSP using DP and return the minimum route and the cost of the minimum route and the result is a tuple with the best route as a list and the minimum cost given as an integer
 
 def tsp_dynamic_programming(graph):
-    nodes = list(graph.nodes)
+    nodes = list(graph.nodes) # List of nodes in the graph (ie all of the cities)
     n = len(nodes)
     dp = {}  # (bitmask, current_node) -> cost, parent
     

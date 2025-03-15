@@ -1,0 +1,5 @@
+networkx==3.2  # For creating and manipulating graphs
+pandas==1.5.3  # For storing results in CSV format
+matplotlib==3.7.1  # For plotting runtime comparison graphs
+numpy==1.24.3  # For numerical calculations
+tabulate==0.9.0  # For formatting output in terminal tables
