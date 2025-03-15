@@ -5,7 +5,7 @@ from algorithms.TSP_branch_and_bound import tsp_branch_and_bound
 from algorithms.TSP_DP import tsp_dynamic_programming
 from algorithms.TSP_approx import tsp_approximation
 
-# ✅ Utility function to verify if a TSP path is valid
+
 def is_valid_tsp_path(graph, path):
     if path is None:
         return False
@@ -15,7 +15,7 @@ def is_valid_tsp_path(graph, path):
         return False
     return len(set(path[:-1])) == len(graph.nodes)  # No duplicates except return to start
 
-# ✅ Create a known small graph for testing
+
 @pytest.fixture
 def small_graph():
     G = nx.Graph()
@@ -28,25 +28,24 @@ def small_graph():
         G.add_edge(u, v, weight=w)
     return G
 
-# ✅ Test Brute Force TSP
 def test_tsp_brute_force(small_graph):
     route, cost = tsp_brute_force(small_graph)
     assert is_valid_tsp_path(small_graph, route)
     assert cost == 80  # Expected optimal solution
 
-# ✅ Test Branch and Bound TSP
+
 def test_tsp_branch_and_bound(small_graph):
     route, cost = tsp_branch_and_bound(small_graph)
     assert is_valid_tsp_path(small_graph, route)
     assert cost == 80  # Expected optimal solution
 
-# ✅ Test Dynamic Programming TSP
+
 def test_tsp_dynamic_programming(small_graph):
     route, cost = tsp_dynamic_programming(small_graph)
     assert is_valid_tsp_path(small_graph, route)
     assert cost == 80  # Expected optimal solution
 
-# ✅ Test Approximation Algorithm
+
 def test_tsp_approximation(small_graph):
     route, cost = tsp_approximation(small_graph)
     assert is_valid_tsp_path(small_graph, route)
