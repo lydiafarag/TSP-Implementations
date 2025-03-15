@@ -20,20 +20,7 @@ Ensure you have the following installed:
   ```
 
 ### **1.2 Project Structure**
-TSP-IMPLEMENTATIONS/
-│── algorithms/            # Implementations of TSP algorithms
-│   ├── TSP_bruteforce.py
-│   ├── TSP_branch_and_bound.py
-│   ├── TSP_DP.py
-│   ├── TSP_approx.py
-│── datasets/              # Generated graph data
-│── results/               # Generated output files (CSV, PNG)
-│── main.py                # Runs a single experiment
-│── analyze_performance.py # Runs multiple trials & generates performance plots
-│── requirements.txt       # Dependencies
-│── README.md              # Documentation
-│── test_tsp.py            # Test suite for verifying implementations
-|── run_custom_test.py     # Python file allowing for custom test to be run
+TSP-IMPLEMENTATIONS/ │── algorithms/ # Implementations of TSP algorithms │ ├── TSP_bruteforce.py # Brute Force implementation │ ├── TSP_branch_and_bound.py # Branch and Bound implementation │ ├── TSP_DP.py # Dynamic Programming (Held-Karp) │ ├── TSP_approx.py # Approximation algorithm (MST-based) │ │── datasets/ # Generated graph data │── results/ # Generated output files (CSV, PNG) │ │── main.py # Runs a single experiment │── analyze_performance.py # Runs multiple trials & generates performance plots │── run_custom_test.py # Python file allowing for custom test to be run │ │── test_tsp.py # Test suite for verifying implementations │── requirements.txt # Dependencies │── README.md # Documentation
 
 ## **2. Running the Implementations**
 
