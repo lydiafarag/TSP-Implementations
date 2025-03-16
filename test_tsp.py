@@ -1,5 +1,6 @@
 import networkx as nx
 import pytest
+import time # For timeouts
 from algorithms.TSP_bruteforce import tsp_brute_force
 from algorithms.TSP_branch_and_bound import tsp_branch_and_bound
 from algorithms.TSP_DP import tsp_dynamic_programming
@@ -62,6 +63,14 @@ def negative_weight_graph():
     for u, v in G.edges():
         G[u][v]['weight'] = -abs(u - v)  # Assign small negative weights
     return G
+
+@pytest.fixture
+def very_large_graph():
+    """Creates an even larger graph (n=12) where Branch and Bound may timeout."""
+    G = nx.complete_graph(12)
+    for u, v in G.edges():
+        G[u][v]['weight'] = (u + v) * 5  # Assign deterministic weights
+    return G
 #tests on small graphs 
 
 @pytest.mark.parametrize("graph", ["small_graph", "large_graph", "equal_weight_graph"])
@@ -96,4 +105,12 @@ def test_disconnected_graph(algorithm, disconnected_graph):
 def test_negative_weight_graph(algorithm, negative_weight_graph):
     route, cost = algorithm(negative_weight_graph)
     assert route is None and cost==float("inf")  # No valid path should exist
+    
+
+@pytest.mark.timeout(5)  # Set a 5-second timeout
+def test_brute_force_timeout(large_graph):
+    start_time = time.time()
+    route, cost = tsp_brute_force(large_graph)
+    end_time = time.time()
+    assert end_time - start_time < 5, "Brute Force took too long!"
     
