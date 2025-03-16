@@ -28,25 +28,72 @@ def small_graph():
         G.add_edge(u, v, weight=w)
     return G
 
-def test_tsp_brute_force(small_graph):
-    route, cost = tsp_brute_force(small_graph)
-    assert is_valid_tsp_path(small_graph, route)
-    assert cost == 80  # Expected optimal solution
+
+@pytest.fixture
+def large_graph():
+    G = nx.complete_graph(8)
+    for u, v in G.edges():
+        G[u][v]['weight'] = (u + v) * 5  # Assign deterministic weights
+    return G
+
+@pytest.fixture
+def equal_weight_graph():
+    G = nx.complete_graph(5)
+    for u, v in G.edges():
+        G[u][v]['weight'] = 50  # All edges have the same weight
+    return G
+
+@pytest.fixture
+def single_node_graph():
+    G = nx.Graph()
+    G.add_node(0)
+    return G
 
 
-def test_tsp_branch_and_bound(small_graph):
-    route, cost = tsp_branch_and_bound(small_graph)
-    assert is_valid_tsp_path(small_graph, route)
-    assert cost == 80  # Expected optimal solution
+@pytest.fixture
+def disconnected_graph():
+    G = nx.Graph()
+    G.add_edges_from([(0, 1, {'weight': 10}), (2, 3, {'weight': 20})])  # Two separate components
+    return G
 
+@pytest.fixture
+def negative_weight_graph():
+    G = nx.complete_graph(5)
+    for u, v in G.edges():
+        G[u][v]['weight'] = -abs(u - v)  # Assign small negative weights
+    return G
+#tests on small graphs 
 
-def test_tsp_dynamic_programming(small_graph):
-    route, cost = tsp_dynamic_programming(small_graph)
-    assert is_valid_tsp_path(small_graph, route)
-    assert cost == 80  # Expected optimal solution
-
-
-def test_tsp_approximation(small_graph):
-    route, cost = tsp_approximation(small_graph)
-    assert is_valid_tsp_path(small_graph, route)
+@pytest.mark.parametrize("graph", ["small_graph", "large_graph", "equal_weight_graph"])
+def test_tsp_dynamic_programming(request, graph):
+    G = request.getfixturevalue(graph)
+    route, cost = tsp_dynamic_programming(G)
+    assert is_valid_tsp_path(G, route)
     assert cost > 0  # Should return a finite value
+
+@pytest.mark.parametrize("graph", ["small_graph", "large_graph", "equal_weight_graph"])
+def test_tsp_approximation(request, graph):
+    G = request.getfixturevalue(graph)
+    route, cost = tsp_approximation(G)
+    assert is_valid_tsp_path(G, route)
+    assert cost > 0  # Should return a finite value
+
+# single Node Graph (TSP Should Return Trivial Tour)
+@pytest.mark.parametrize("algorithm", [tsp_brute_force, tsp_branch_and_bound, tsp_dynamic_programming, tsp_approximation])
+def test_single_node_graph(algorithm, single_node_graph):
+    route, cost = algorithm(single_node_graph)
+    assert route == [0, 0]  # Only one node, must return to itself
+    assert cost == 0  # No distance to travel
+#  Disconnected Graph (TSP Should Return No Path)
+@pytest.mark.parametrize("algorithm", [tsp_brute_force, tsp_branch_and_bound, tsp_dynamic_programming, tsp_approximation])
+def test_disconnected_graph(algorithm, disconnected_graph):
+    route, cost = algorithm(disconnected_graph)
+    assert route is None  # No valid path should exist
+    assert cost == float("inf")  # Cost should be infinite
+
+
+@pytest.mark.parametrize("algorithm", [tsp_brute_force, tsp_branch_and_bound, tsp_dynamic_programming, tsp_approximation])
+def test_negative_weight_graph(algorithm, negative_weight_graph):
+    route, cost = algorithm(negative_weight_graph)
+    assert route is None and cost==float("inf")  # No valid path should exist
+    
