@@ -129,11 +129,26 @@ def run_experiments():
     plot_runtime_per_test_case(runtime_df)
 
 def plot_runtime_per_test_case(runtime_df):
+    algorithm_colors = {
+        "Brute Force": "blue",
+        "Branch and Bound": "orange",
+        "Dynamic Programming": "green",
+        "Approximation Algorithm": "red"
+    }
+    algorithm_acronyms = {
+        "Brute Force": "BF",
+        "Branch and Bound": "B&B",
+        "Dynamic Programming": "DP",
+        "Approximation Algorithm": "Approx"
+    }
     for test_case in runtime_df["Test Case"].unique():
         subset = runtime_df[runtime_df["Test Case"] == test_case]
 
         plt.figure(figsize=(8, 5))
-        plt.bar(subset["Algorithm"], subset["Runtime (seconds)"], color=['blue', 'orange', 'green', 'red'])
+        bar_colors = [algorithm_colors.get(alg, "gray") for alg in subset["Algorithm"]]
+        x_labels = [algorithm_acronyms.get(alg, alg) for alg in subset["Algorithm"]]
+
+        plt.bar(x_labels, subset["Runtime (seconds)"], color=bar_colors)
         plt.xlabel("Algorithm")
         plt.ylabel("Runtime (seconds)")
         plt.title(f"TSP Runtime for {test_case}")

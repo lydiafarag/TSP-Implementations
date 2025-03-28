@@ -1,106 +1,106 @@
 Test Case,Graph Size,Algorithm,Trial,Path,Cost,Dataset
-Small graph (4 nodes),4,Brute Force,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Brute Force,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Brute Force,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Brute Force,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Brute Force,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Branch and Bound,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Branch and Bound,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Branch and Bound,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Branch and Bound,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Branch and Bound,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Dynamic Programming,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Dynamic Programming,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Dynamic Programming,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Dynamic Programming,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Dynamic Programming,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Approximation Algorithm,1,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Approximation Algorithm,2,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Approximation Algorithm,3,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Approximation Algorithm,4,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
-Small graph (4 nodes),4,Approximation Algorithm,5,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
-Medium graph (8 nodes),8,Brute Force,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Brute Force,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Brute Force,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Brute Force,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Brute Force,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Branch and Bound,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Branch and Bound,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Branch and Bound,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Branch and Bound,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Branch and Bound,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Dynamic Programming,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Dynamic Programming,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Dynamic Programming,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Dynamic Programming,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Dynamic Programming,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Approximation Algorithm,1,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Approximation Algorithm,2,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Approximation Algorithm,3,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Approximation Algorithm,4,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
-Medium graph (8 nodes),8,Approximation Algorithm,5,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
-Medium graph (10 nodes),10,Brute Force,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Brute Force,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Brute Force,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Brute Force,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Brute Force,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Branch and Bound,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Branch and Bound,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Branch and Bound,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Branch and Bound,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Branch and Bound,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Dynamic Programming,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Dynamic Programming,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Dynamic Programming,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Dynamic Programming,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Dynamic Programming,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Approximation Algorithm,1,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Approximation Algorithm,2,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Approximation Algorithm,3,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Approximation Algorithm,4,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
-Medium graph (10 nodes),10,Approximation Algorithm,5,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
-Large graph (12 nodes),12,Branch and Bound,1,,,datasets\graph_12.json
-Large graph (12 nodes),12,Branch and Bound,2,,,datasets\graph_12.json
-Large graph (12 nodes),12,Branch and Bound,3,,,datasets\graph_12.json
-Large graph (12 nodes),12,Branch and Bound,4,,,datasets\graph_12.json
-Large graph (12 nodes),12,Branch and Bound,5,,,datasets\graph_12.json
-Large graph (12 nodes),12,Dynamic Programming,1,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
-Large graph (12 nodes),12,Dynamic Programming,2,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
-Large graph (12 nodes),12,Dynamic Programming,3,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
-Large graph (12 nodes),12,Dynamic Programming,4,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
-Large graph (12 nodes),12,Dynamic Programming,5,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
-Large graph (12 nodes),12,Approximation Algorithm,1,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
-Large graph (12 nodes),12,Approximation Algorithm,2,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
-Large graph (12 nodes),12,Approximation Algorithm,3,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
-Large graph (12 nodes),12,Approximation Algorithm,4,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
-Large graph (12 nodes),12,Approximation Algorithm,5,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,1,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,2,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,3,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,4,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Branch and Bound,5,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,1,,,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,2,,,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,3,,,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,4,,,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Dynamic Programming,5,,,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,1,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,2,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,3,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,4,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
-"Sparse graph (12 nodes, 30% edges)",12,Approximation Algorithm,5,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Branch and Bound,1,,,datasets\graph_12.json
-Fully connected (12 nodes),12,Branch and Bound,2,,,datasets\graph_12.json
-Fully connected (12 nodes),12,Branch and Bound,3,,,datasets\graph_12.json
-Fully connected (12 nodes),12,Branch and Bound,4,,,datasets\graph_12.json
-Fully connected (12 nodes),12,Branch and Bound,5,,,datasets\graph_12.json
-Fully connected (12 nodes),12,Dynamic Programming,1,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Dynamic Programming,2,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Dynamic Programming,3,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Dynamic Programming,4,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Dynamic Programming,5,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Approximation Algorithm,1,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Approximation Algorithm,2,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Approximation Algorithm,3,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Approximation Algorithm,4,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
-Fully connected (12 nodes),12,Approximation Algorithm,5,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
+Small graph (4 nodes),4,BF,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,BF,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,BF,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,BF,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,BF,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,B&B,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,B&B,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,B&B,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,B&B,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,B&B,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,DP,1,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,DP,2,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,DP,3,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,DP,4,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,DP,5,"[0, 1, 3, 2, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,Approx Algo,1,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,Approx Algo,2,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,Approx Algo,3,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,Approx Algo,4,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
+Small graph (4 nodes),4,Approx Algo,5,"[0, 2, 3, 1, 0]",188.0,datasets\graph_4.json
+Medium graph (8 nodes),8,BF,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,BF,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,BF,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,BF,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,BF,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,B&B,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,B&B,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,B&B,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,B&B,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,B&B,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,DP,1,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,DP,2,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,DP,3,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,DP,4,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,DP,5,"[0, 1, 6, 2, 4, 3, 5, 7, 0]",149.0,datasets\graph_8.json
+Medium graph (8 nodes),8,Approx Algo,1,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
+Medium graph (8 nodes),8,Approx Algo,2,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
+Medium graph (8 nodes),8,Approx Algo,3,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
+Medium graph (8 nodes),8,Approx Algo,4,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
+Medium graph (8 nodes),8,Approx Algo,5,"[0, 1, 6, 2, 7, 4, 3, 5, 0]",252.0,datasets\graph_8.json
+Medium graph (10 nodes),10,BF,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,BF,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,BF,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,BF,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,BF,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,B&B,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,B&B,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,B&B,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,B&B,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,B&B,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,DP,1,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,DP,2,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,DP,3,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,DP,4,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,DP,5,"[0, 2, 7, 9, 3, 5, 1, 6, 4, 8, 0]",153.0,datasets\graph_10.json
+Medium graph (10 nodes),10,Approx Algo,1,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
+Medium graph (10 nodes),10,Approx Algo,2,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
+Medium graph (10 nodes),10,Approx Algo,3,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
+Medium graph (10 nodes),10,Approx Algo,4,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
+Medium graph (10 nodes),10,Approx Algo,5,"[0, 8, 4, 9, 3, 5, 1, 6, 7, 2, 0]",262.0,datasets\graph_10.json
+Large graph (12 nodes),12,B&B,1,,,datasets\graph_12.json
+Large graph (12 nodes),12,B&B,2,,,datasets\graph_12.json
+Large graph (12 nodes),12,B&B,3,,,datasets\graph_12.json
+Large graph (12 nodes),12,B&B,4,,,datasets\graph_12.json
+Large graph (12 nodes),12,B&B,5,,,datasets\graph_12.json
+Large graph (12 nodes),12,DP,1,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
+Large graph (12 nodes),12,DP,2,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
+Large graph (12 nodes),12,DP,3,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
+Large graph (12 nodes),12,DP,4,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
+Large graph (12 nodes),12,DP,5,"[0, 8, 1, 5, 4, 3, 2, 9, 10, 7, 6, 11, 0]",219.0,datasets\graph_12.json
+Large graph (12 nodes),12,Approx Algo,1,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
+Large graph (12 nodes),12,Approx Algo,2,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
+Large graph (12 nodes),12,Approx Algo,3,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
+Large graph (12 nodes),12,Approx Algo,4,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
+Large graph (12 nodes),12,Approx Algo,5,"[0, 8, 1, 3, 2, 9, 10, 4, 5, 6, 7, 11, 0]",327.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,B&B,1,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,B&B,2,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,B&B,3,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,B&B,4,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,B&B,5,"[0, 7, 6, 11, 9, 1, 2, 10, 3, 4, 5, 8, 0]",393.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,DP,1,,,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,DP,2,,,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,DP,3,,,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,DP,4,,,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,DP,5,,,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,Approx Algo,1,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,Approx Algo,2,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,Approx Algo,3,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,Approx Algo,4,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
+"Sparse graph (12 nodes, 30% edges)",12,Approx Algo,5,"[0, 9, 8, 5, 4, 3, 11, 6, 2, 1, 10, 7, 0]",492.0,datasets\graph_12.json
+Fully connected (12 nodes),12,B&B,1,,,datasets\graph_12.json
+Fully connected (12 nodes),12,B&B,2,,,datasets\graph_12.json
+Fully connected (12 nodes),12,B&B,3,,,datasets\graph_12.json
+Fully connected (12 nodes),12,B&B,4,,,datasets\graph_12.json
+Fully connected (12 nodes),12,B&B,5,,,datasets\graph_12.json
+Fully connected (12 nodes),12,DP,1,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
+Fully connected (12 nodes),12,DP,2,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
+Fully connected (12 nodes),12,DP,3,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
+Fully connected (12 nodes),12,DP,4,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
+Fully connected (12 nodes),12,DP,5,"[0, 2, 6, 10, 8, 4, 7, 1, 3, 11, 5, 9, 0]",242.0,datasets\graph_12.json
+Fully connected (12 nodes),12,Approx Algo,1,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
+Fully connected (12 nodes),12,Approx Algo,2,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
+Fully connected (12 nodes),12,Approx Algo,3,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
+Fully connected (12 nodes),12,Approx Algo,4,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json
+Fully connected (12 nodes),12,Approx Algo,5,"[0, 2, 6, 10, 8, 7, 4, 11, 3, 1, 5, 9, 0]",368.0,datasets\graph_12.json

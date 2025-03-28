@@ -72,16 +72,18 @@ def run_experiments():
 
     results = []
     runtime_results = {}
+    
+
 
     for test_name, (G, dataset_path) in test_cases:
-        runtime_results[test_name] = {algo: [] for algo in ["Brute Force", "Branch and Bound", "Dynamic Programming", "Approximation Algorithm"]}
+        runtime_results[test_name] = {algo: [] for algo in ["BF", "B&B", "DP", "Approx Algo"]}
         print(f"\nRunning experiments for: {test_name}...")
 
         algorithms = [
-            ("Brute Force", tsp_brute_force) if len(G.nodes) <= 10 else None,
-            ("Branch and Bound", tsp_branch_and_bound) if len(G.nodes) <= 12 else None,
-            ("Dynamic Programming", tsp_dynamic_programming),
-            ("Approximation Algorithm", tsp_approximation)
+            ("BF", tsp_brute_force) if len(G.nodes) <= 10 else None,
+            ("B&B", tsp_branch_and_bound) if len(G.nodes) <= 12 else None,
+            ("DP", tsp_dynamic_programming),
+            ("Approx Algo", tsp_approximation)
         ]
 
         for algorithm_entry in algorithms:
@@ -122,7 +124,12 @@ def run_experiments():
 
 def plot_performance(runtime_results):
   
-    
+    ALGORITHM_COLORS = {
+    "BF": "blue",
+    "B&B": "green",
+    "DP": "red",
+    "Approx Algo": "purple"
+}
     # Individual test case plots
     for test_case, algo_runtimes in runtime_results.items():
         plt.figure(figsize=(8, 5))
@@ -130,7 +137,8 @@ def plot_performance(runtime_results):
         for algorithm, runtimes in algo_runtimes.items():
             if runtimes:
                 avg_runtime = [sum(runtimes[:i+1]) / (i+1) for i in range(len(runtimes))]  # Cumulative avg
-                plt.plot(range(1, len(avg_runtime)+1), avg_runtime, marker='o', label=algorithm)
+                color = ALGORITHM_COLORS.get(algorithm, None)
+                plt.plot(range(1, len(avg_runtime)+1), avg_runtime, marker='o', label=algorithm, color=color)
 
         plt.xlabel("Trial")
         plt.ylabel("Runtime (seconds)")
@@ -149,7 +157,9 @@ def plot_performance(runtime_results):
         for algo_idx, (algorithm, runtimes) in enumerate(algo_runtimes.items()):
             if runtimes:
                 avg_runtime = [sum(runtimes[:i+1]) / (i+1) for i in range(len(runtimes))]
-                plt.plot(range(1, len(avg_runtime)+1), avg_runtime, marker='o', linestyle='-', label=f"{algorithm} ({test_case})", color=colors[algo_idx % len(colors)])
+                color = ALGORITHM_COLORS.get(algorithm, None)
+                plt.plot(range(1, len(avg_runtime)+1), avg_runtime, marker='o', linestyle='-',
+                         label=f"{algorithm} ({test_case})", color=color)
 
     plt.xlabel("Trial")
     plt.ylabel("Runtime (seconds)")
