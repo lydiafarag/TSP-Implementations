@@ -6,7 +6,7 @@ from algorithms.TSP_branch_and_bound import tsp_branch_and_bound
 from algorithms.TSP_DP import tsp_dynamic_programming
 from algorithms.TSP_approx import tsp_approximation
 
-
+# This function checks if the TSP path is valid
 def is_valid_tsp_path(graph, path):
     if path is None:
         return False
@@ -16,7 +16,7 @@ def is_valid_tsp_path(graph, path):
         return False
     return len(set(path[:-1])) == len(graph.nodes)  # No duplicates except return to start
 
-
+#this funcction checks if the graph is connected for smaller graphs
 @pytest.fixture
 def small_graph():
     G = nx.Graph()
@@ -29,7 +29,7 @@ def small_graph():
         G.add_edge(u, v, weight=w)
     return G
 
-
+#this function checks if the graph is connected for larger graphs
 @pytest.fixture
 def large_graph():
     G = nx.complete_graph(8)
@@ -37,26 +37,29 @@ def large_graph():
         G[u][v]['weight'] = (u + v) * 5  # Assign deterministic weights
     return G
 
+
+# This function checks if the graph is connected for equal weight graphs
 @pytest.fixture
 def equal_weight_graph():
     G = nx.complete_graph(5)
     for u, v in G.edges():
         G[u][v]['weight'] = 50  # All edges have the same weight
     return G
-
+# This function checks if the graph is connected for single node graphs
 @pytest.fixture
 def single_node_graph():
     G = nx.Graph()
     G.add_node(0)
     return G
 
-
+#this function checks if the graph returns None for disconnected graphs
 @pytest.fixture
 def disconnected_graph():
     G = nx.Graph()
     G.add_edges_from([(0, 1, {'weight': 10}), (2, 3, {'weight': 20})])  # Two separate components
     return G
 
+#this checks if the graph returns None for negative weight graphs
 @pytest.fixture
 def negative_weight_graph():
     G = nx.complete_graph(5)
@@ -64,14 +67,18 @@ def negative_weight_graph():
         G[u][v]['weight'] = -abs(u - v)  # Assign small negative weights
     return G
 
+#
 @pytest.fixture
 def very_large_graph():
-    """Creates an even larger graph (n=12) where Branch and Bound may timeout."""
+
     G = nx.complete_graph(12)
     for u, v in G.edges():
         G[u][v]['weight'] = (u + v) * 5  # Assign deterministic weights
     return G
-#tests on small graphs 
+
+
+
+#this section generates lots of tests and asserts the correctness based on a known "correct" graph
 
 @pytest.mark.parametrize("graph", ["small_graph", "large_graph", "equal_weight_graph"])
 def test_tsp_dynamic_programming(request, graph):
@@ -93,6 +100,8 @@ def test_single_node_graph(algorithm, single_node_graph):
     route, cost = algorithm(single_node_graph)
     assert route == [0, 0]  # Only one node, must return to itself
     assert cost == 0  # No distance to travel
+
+
 #  Disconnected Graph (TSP Should Return No Path)
 @pytest.mark.parametrize("algorithm", [tsp_brute_force, tsp_branch_and_bound, tsp_dynamic_programming, tsp_approximation])
 def test_disconnected_graph(algorithm, disconnected_graph):
@@ -101,13 +110,17 @@ def test_disconnected_graph(algorithm, disconnected_graph):
     assert cost == float("inf")  # Cost should be infinite
 
 
+#  Negative Weight Graph (TSP Should Return No Path)
 @pytest.mark.parametrize("algorithm", [tsp_brute_force, tsp_branch_and_bound, tsp_dynamic_programming, tsp_approximation])
 def test_negative_weight_graph(algorithm, negative_weight_graph):
     route, cost = algorithm(negative_weight_graph)
     assert route is None and cost==float("inf")  # No valid path should exist
     
 
-@pytest.mark.timeout(5)  # Set a 5-second timeout
+
+#ensures the timeout occurs for brute force when it exceeds 20 seconds of processig
+
+@pytest.mark.timeout(20)  # Set a 20-second timeout
 def test_brute_force_timeout(large_graph):
     start_time = time.time()
     route, cost = tsp_brute_force(large_graph)

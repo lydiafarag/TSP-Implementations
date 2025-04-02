@@ -71,7 +71,7 @@ def run_custom_test():
     # make a graph
     print("\n Generating graph...")
     G, dataset_path = generate_custom_graph(num_nodes, edge_prob)
-    print(f"✅ Graph generated and saved to {dataset_path}")
+    print(f" Graph generated and saved to {dataset_path}")
 
     # run the algo
     print(f"\n Running {algorithm_name} algorithm...")
@@ -81,11 +81,11 @@ def run_custom_test():
     runtime = end_time - start_time
 
     # print results
-    print("\n🎯 **Results:**")
-    print(f"  ➤ Algorithm: {algorithm_name}")
-    print(f"  ➤ Path: {route}")
-    print(f"  ➤ Cost: {cost}")
-    print(f"  ➤ Execution Time: {runtime:.4f} seconds")
+    print("\n Displaying the results now")
+    print(f"   Algorithm: {algorithm_name}")
+    print(f"   Path: {route}")
+    print(f"  Cost: {cost}")
+    print(f"  Execution Time: {runtime:.4f} sec")
 
     # include in CSV
     results_path = os.path.join(RESULTS_FOLDER, "custom_test_results.csv")

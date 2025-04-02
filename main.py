@@ -20,6 +20,7 @@ os.makedirs(DATASET_FOLDER, exist_ok=True)
 
 random.seed(42)
 
+# This is the number of trials for each algorithm on each graph
 def generate_graph(num_nodes, edge_prob=1.0):
     G = nx.Graph()
     nodes = list(range(num_nodes))

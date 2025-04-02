@@ -19,9 +19,11 @@ os.makedirs(RESULTS_FOLDER, exist_ok=True)
 os.makedirs(DATASET_FOLDER, exist_ok=True)
 
 random.seed(42)
-
+# This is the number of trials for each algorithm on each graph
 NUM_TRIALS = 5  
 
+#function to generate a graph with a given number of nodes and edge probability, does so randomly
+#result is saved to JSON file in the datasets folder and then returned
 def generate_graph(num_nodes, edge_prob=1.0):
 
     G = nx.Graph()
@@ -37,7 +39,7 @@ def generate_graph(num_nodes, edge_prob=1.0):
         json.dump(nx.node_link_data(G), f, indent=4)
 
     return G, dataset_path
-
+#   #function to run the algorithm in a separate process to avoid blocking the main thread
 def algorithm_runner(queue, algorithm, G):
 
     try:
@@ -45,6 +47,8 @@ def algorithm_runner(queue, algorithm, G):
         queue.put(result)
     except Exception:
         queue.put((None, None))
+
+#function to run the algorithm with a timeout, if it takes too long it will be terminated
 
 def run_algorithm_with_timeout(algorithm, G, timeout=60):
 
@@ -58,7 +62,7 @@ def run_algorithm_with_timeout(algorithm, G, timeout=60):
         return None, None
 
     return queue.get()
-
+#function to run the experiments, it generates different graphs and runs the algorithms on them
 def run_experiments():
 
     test_cases = [
@@ -130,7 +134,7 @@ def plot_performance(runtime_results):
     "DP": "red",
     "Approx Algo": "purple"
 }
-    # Individual test case plots
+    # plot the individual testing plots
     for test_case, algo_runtimes in runtime_results.items():
         plt.figure(figsize=(8, 5))
 
@@ -150,7 +154,7 @@ def plot_performance(runtime_results):
         plt.savefig(plot_path)
         plt.show()
 
-    # Overall comparison plot
+    # overall plot 
     plt.figure(figsize=(10, 6))
     colors = ['b', 'g', 'r', 'c']
     for idx, (test_case, algo_runtimes) in enumerate(runtime_results.items()):
@@ -173,5 +177,5 @@ def plot_performance(runtime_results):
     plt.show()
 
 if __name__ == "__main__":
-    multiprocessing.set_start_method("spawn")  # Needed for Windows
+    multiprocessing.set_start_method("spawn")  # doesnt work on windows without this 
     run_experiments()
